@@ -2,27 +2,59 @@
 # Week 5 — Midnight Mail Train
 
 ## Summary
-Write 3–6 lines explaining what this assignment does.
+This assignment focuses on implementing a doubly linked list, recursion, and basic string and validation problems. It simulates a train system where cars are added and removed, ticket codes are validated, and radio messages are cleaned.
 
 ## Approach
+
 - Problem 1:
+  Implemented a doubly linked list using nodes with `prev` and `next` pointers. Handled edge cases like empty list, single node, and multiple nodes.
+
 - Problem 2:
+  Checked ticket codes using string methods. Ensured format starts with "MM-" and ends with exactly 4 digits.
+
 - Problem 3:
+  Used recursion to count occurrences of a target label in a list by breaking the list into smaller subproblems.
+
 - Problem 4:
+  Used recursion to remove spaces from a string by processing one character at a time.
 
 ## Complexity
-Write the time and space complexity for each required problem.
-Give a short reason for each one.
+
+- append_car:
+  Time: O(1), Space: O(1)
+  Reason: Direct insertion at tail.
+
+- detach_last_car:
+  Time: O(1), Space: O(1)
+  Reason: Direct removal from tail pointer.
+
+- to_reverse_list:
+  Time: O(n), Space: O(n)
+  Reason: Traverses all nodes once.
+
+- is_valid_ticket_code:
+  Time: O(1), Space: O(1)
+  Reason: Only checks fixed parts of string.
+
+- count_priority_labels:
+  Time: O(n), Space: O(n)
+  Reason: Recursively processes each label once.
+
+- clean_radio_message:
+  Time: O(n), Space: O(n)
+  Reason: Recursively processes each character.
 
 ## Edge-case checklist
-- [ ] empty train
-- [ ] one train car
-- [ ] invalid ticket code
-- [ ] empty label list
-- [ ] empty message
-- [ ] one-character or all-space message
+
+- [x] empty train
+- [x] one train car
+- [x] invalid ticket code
+- [x] empty label list
+- [x] empty message
+- [x] one-character or all-space message
 
 ## Assistance & Sources
-- AI used? Y/N
-- What it helped with:
-- Other sources used:
+
+- AI used? Y
+- What it helped with: Understanding linked lists, recursion, debugging test cases, and writing README structure.
+- Other sources used: Lecture slides and class notes
